@@ -7,9 +7,9 @@ const fs=require('fs');
 // const a=fs.readFileSync('file.txt','utf8');
 // console.log(a);
 
-// fs.writeFile('file.txt',"this is a data", ()=>{
-//     console.log("written to the file")
-// });
+fs.writeFile('file.txt',"this is a data", ()=>{
+    console.log("written to the file")
+});
 
 // const a=fs.writeFileSync('file.txt',"this is data");
 // console.log(a);
