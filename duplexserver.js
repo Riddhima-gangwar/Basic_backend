@@ -1,15 +1,14 @@
-const createServer =require('net');
-const server= createServer((Socket)=>{
-    console.log('client connected');
-    socket.on('data', (data)=>{
-        console.log('received',data.toString());
-        socket.write("hello from server ");
+import {createServer} from 'net';
+const server =createServer((socket)=>{
+    console.log("client connected");
+    socket.on('data',(data)=>{
+        console.log("received",data.toString());
+        socket.write("Hello Client!");
     })
-
     socket.on('end',()=>{
-        console.log('client disconnected');
+        console.log("client disconnected");
     })
 })
-server.listen(2000,()=>{
-    console.log("server is listening on port 2000")
+server.listen(3000,()=>{
+    console.log("server listening on port 3000");
 })

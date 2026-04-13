@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>crud operations</title>
+</head>
+
+<body>
+    <h3>show all products</h3>
+    <form action="/show" method="GET">
+        <input type="submit" value="Show">
+    </form>
+    <h3>insert a product</h3>
+    <form action="/add" method="POST">
+        Name <input type="text" name="name"><br>
+        Price: <input type="number" name="price"><br>
+        <input type="submit" value="Add">
+    </form>
+    <h3>update a product</h3>
+    <form action="/update" method="POST">
+        Id <input type="number" name="id"><br>
+        Name <input type="text" name="name"><br>
+        Price: <input type="number" name="price"><br>
+        <input type="submit" value="Update">
+    </form>
+    <h3>delete a product</h3>
+    <form action="/delete" method="POST">
+        Id <input type="number" name="id"><br>
+        <input type="submit" value="Delete">
+    </form>
+</body>
+
+</html>
